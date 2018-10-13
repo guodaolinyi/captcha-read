@@ -1,3 +1,8 @@
+>感谢大佬分享
+
+>https://github.com/Kuri-su/CAPTCHA_Reader
+>
+>https://github.com/kbdxbt/captcha_read
 ##调用说明
 
 ### online模式 调用代码段
