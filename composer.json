@@ -1,15 +1,13 @@
 {
-  "name": "kurisu/captcha_reader",
-  "description": "kurisu/captcha_reader",
-  "type": "project",
+  "name": "guodaolinyi/captcha-reader",
+  "description": "验证码识别类",
   "license": "MIT",
   "authors": [
     {
-      "name": "kurisu",
-      "email": "Kuri-su@users.noreply.github.com"
+      "name": "guodaolinyi",
+      "email": "1397871454@qq.com"
     }
   ],
-  "minimum-stability": "stable",
   "require": {
     "symfony/var-dumper": "^3.4"
   },
@@ -21,9 +19,8 @@
     "psr-4": {
       "App\\": "src/"
     },
-    "files":[
+    "files": [
       "helpers.php"
     ]
-
   }
 }
