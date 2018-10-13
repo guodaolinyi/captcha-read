@@ -30,11 +30,11 @@ class IndexController
      * @return string
      *
      */
-    public function entrance($imagePath, $mode, $test = false)
+    public function entrance($imagePath, $mode, $group = false, $test = false)
     {
         try {
             //获取 装饰器
-            $decorator = $this->getDecorator($this->conf);
+            $decorator = $this->getDecorator($this->conf, $group);
             //设置 结果容器
             $resultContainer = new ResultContainer();
             $resultContainer->setConf($this->conf);
@@ -57,9 +57,9 @@ class IndexController
      * @param $config
      * @return null
      */
-    public function getDecorator($conf)
+    public function getDecorator($conf, $group)
     {
-        $useGroup = $conf['useGroup'];
+        $group == false ? $useGroup = $conf['useGroup'] : $useGroup = $group;
         $components = $conf['componentGroup'][$useGroup];
 
         $decorator = $this->instantiationDecorator($components['components']);

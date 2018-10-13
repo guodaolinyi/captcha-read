@@ -13,8 +13,9 @@ require_once(__DIR__ . '/../../vendor/autoload.php');
 use CAPTCHAReader\src\App\IndexController;
 
 $a = new IndexController();
-
-$c=$a->entrance('http://yktcx.bjwlxy.cn/CheckCode.aspx','online');
+//$group = false;
+$group = 'YKTNormal';
+$c = $a->entrance('http://yktcx.bjwlxy.cn/CheckCode.aspx', 'online', $group);
 //$c = $a->entrance(__DIR__ . '/../../sample/StudySamples/QinGuo/8aed.png', 'local');
 //$c = $a->entrance(__DIR__ . '/../../sample/StudySamples/unmark/qinGuo/17033.png', 'local');
 //$c=$a->entrance(__DIR__.'/../../sample/StudySamples/neea.edu.cn/c/8x6p.png','local');
